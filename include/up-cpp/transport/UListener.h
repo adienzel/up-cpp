@@ -42,7 +42,7 @@ namespace uprotocol::utransport {
 			* @param message Topic the underlying source of the message.
 			* @return Returns an Ack every time a message is received and processed.
 			*/
-			virtual uprotocol::v1::UStatus onReceive(uprotocol::utransport::UMessage &message) const = 0; 
+			virtual uprotocol::v1::UStatus onReceive(uprotocol::utransport::UMessage &message) = 0; 
 
 			virtual ~UListener() {} 
 	};

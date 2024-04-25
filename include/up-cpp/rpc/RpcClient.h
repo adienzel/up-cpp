@@ -78,7 +78,7 @@ namespace uprotocol::rpc {
             virtual uprotocol::v1::UStatus invokeMethod(const uprotocol::v1::UUri &topic,
                                                         const uprotocol::utransport::UPayload &payload,
                                                         const uprotocol::v1::CallOptions &options,
-                                                        const uprotocol::utransport::UListener &callback) = 0;
+                                                        uprotocol::utransport::UListener &callback) = 0;
 
             virtual ~RpcClient() {} 
     };
