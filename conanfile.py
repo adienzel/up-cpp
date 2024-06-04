@@ -34,7 +34,7 @@ class UpCpp(ConanFile):
         "build_unbundled": False,
         "build_cross_compiling": False,
     }
-        
+
     def requirements(self):
         self.requires("protobuf/3.21.12" + ("@cross/cross" if self.options.build_cross_compiling else ""))
         self.requires("spdlog/1.13.0")
